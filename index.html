@@ -1,0 +1,277 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+<title>预付管理后台</title>
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+<link href="css/shin.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/shin.js"></script>
+</head>
+
+<body>
+
+<!-- Left side content -->
+<div id="leftSide">
+    <div class="logo"><a href="index.html"><img src="images/logo.png" alt="" /></a></div>
+    
+    <div class="sidebarSep mt0"></div>
+    
+   
+    
+    <!-- Left navigation -->
+    <ul id="menu" class="nav">
+        <li class="forms"><a href="#" title="" class="exp"><span>天猫订单</span><!--<strong>3</strong>--><i></i></a>
+            <ul class="sub">
+                <li><a href="#" title="">第三方预付</a></li>
+                <li><a href="#" title="">酒店套票</a></li>
+                <li class="last"><a href="#" title="">天猫自签度假酒店</a></li>
+            </ul>
+        </li>
+       <li class="forms"><a href="#" title="" class="exp"><span>天猫订单</span><!--<strong>3</strong>--><i></i></a>
+            <ul class="sub">
+                <li><a href="#" title="">第三方预付</a></li>
+                <li><a href="#" title="">酒店套票</a></li>
+                <li class="last"><a href="#" title="">天猫自签度假酒店</a></li>
+            </ul>
+        </li>
+    </ul>
+    <p id="nav-slide"><<</p>
+</div>
+
+
+<!-- Right side -->
+<div id="rightSide">
+
+    <!-- Top fixed navigation -->
+    <div class="topNav">
+        <div class="wrapper">
+            <div class="welcome"><a href="#" title=""><img src="images/userPic.png" alt="" /></a><span>当前用户：test001</span></div>
+            <div class="userNav">
+                <ul>
+                    <li><a href="#" title=""><img src="images/icons/topnav/profile.png" alt="" /><span>个人中心</span></a></li>
+                    <li><a href="#" title=""><img src="images/icons/topnav/tasks.png" alt="" /><span>模块管理</span></a></li>
+                    <li class="dd"><a title=""><img src="images/icons/topnav/messages.png" alt="" /><span>系统消息</span><span class="numberTop">8</span></a>
+                        <ul class="userDropdown">
+                            <li><a href="#" title="" class="sAdd">新消息</a></li>
+                            <li><a href="#" title="" class="sInbox">收件箱</a></li>
+                            <li><a href="#" title="" class="sOutbox">已发送</a></li>
+                            <li><a href="#" title="" class="sTrash">回收站</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" title=""><img src="images/icons/topnav/settings.png" alt="" /><span>系统设置</span></a></li>
+                    <li><a href="login.html" title=""><img src="images/icons/topnav/logout.png" alt="" /><span>安全退出</span></a></li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    
+    <!-- Responsive header -->
+    <div class="resp">
+        <div class="respHead">
+            <a href="index.html" title=""><img src="images/logo.png" alt="" /></a>
+        </div>
+        
+        <div class="cLine"></div>
+        <div class="smalldd">
+            <span class="goTo active"><img src="images/icons/light/home.png" alt="" />模块管理</span>
+            <ul class="smallDropdown">
+				 <li><a href="#" title="" class="exp"><img src="images/icons/light/pencil.png" alt="" />天猫订单<strong>3</strong></a>
+                    <ul>
+                        <li><a href="#" title="">第三方预付</a></li>
+                        <li><a href="#" title="">酒店套票</a></li>
+                        <li class="last"><a href="#" title="">天猫自签度假酒店</a></li>
+                    </ul>
+                </li>
+               
+            </ul>
+        </div>
+        <div class="cLine"></div>
+    </div>
+    
+    
+    
+    <!-- Main content wrapper -->
+    <div class="widget">
+            <div class="title"><!--<img src="images/icons/dark/frames.png" alt="" class="titleIcon">--><h6>天猫店铺订单</h6></div>
+            <div class="formRow">
+                        <!--<label>Select dropdown:</label>-->
+                        <div class="formRight">
+                            <div class="selector" >
+                            	<span>—渠道—</span>
+                            	<select name="select2" style="opacity: 0;">
+	                                <option value="opt1">—渠道—</option>
+	                                <option value="opt2">去哪儿</option>
+	                                <option value="opt3">艺龙</option>
+	                                <option value="opt4">携程</option>
+	                                <option value="opt5">同程</option>
+                            	</select>
+                            </div>    
+                            <div class="selector">
+                            	<span>—店铺—</span>
+                            	<select name="select2" style="opacity: 0;">
+	                                <option value="opt1">—店铺—</option>
+	                                <option value="opt2">辰亿</option>
+	                                <option value="opt3">岭之南</option>
+                            	</select>
+                            </div>   
+                        </div>     
+                        <div class="clear"></div>
+                         <div class="formRight">
+                            <div class="selector" >
+                            	<span>订单号</span>
+                            	<select name="select2" style="opacity: 0;">
+	                                <option value="opt1">订单号</option>
+	                                <option value="opt2">淘宝单号</option>
+	                                <option value="opt3">联系人姓名</option>
+	                                <option value="opt4">联系人手机</option>
+	                                <option value="opt5">入住时间</option>
+	                                <option value="opt6">离开时间</option>
+                            	</select>
+                            </div>  
+                            <span class="oneFour form"><input type="text" value="one four"></span>
+                            <div class="selector" >
+                            	<span>酒店名称</span>
+                            	<select name="select2" style="opacity: 0;">
+	                                <option value="opt1">酒店名称</option>
+	                                <option value="opt2">房型名称</option>
+	                                <option value="opt3">订单状态</option>
+	                                <option value="opt4">联系人</option>
+	                                <option value="opt5">联系人手机</option>
+	                                <option value="opt6">入住人</option>
+                            	</select>
+                            </div>  
+                            <span class="oneFour form"><input type="text" value="one four"></span>
+                           </div>
+                        <div class="clear"></div>
+						<div class="formSubmit"><input type="submit" value="搜索" class="redB"></div>
+                    </div>
+
+                    <div class="dataTables_wrapper">
+           				 <table cellpadding="0" cellspacing="0" width="100%" class="sTable">
+                <thead>
+                    <tr>
+                        <td class="sortCol header"><div>订单号</div></td>
+                        <td class="sortCol header"><div>联系人手机</div></td>
+                        <td class="sortCol header"><div>联系人</div></td>
+                        <td class="sortCol header"><div>酒店</div></td>
+                        <td class="sortCol header"><div>房型</div></td>
+                        <td class="sortCol header"><div>间数</div></td>
+                        <td class="sortCol header"><div>入住时间</div></td>
+                        <td class="sortCol header"><div>离开时间</div></td>
+                        <td class="sortCol header"><div>下单时间</div></td>
+                        <td class="sortCol header"><div>状态</div></td>
+                        <td class="sortCol header"><div>天猫单号</div></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>k185489444</td>
+                        <td>18666082282</td>
+                        <td>徐志华</td>
+                        <td>上海圣诺亚皇冠假日酒店</td>
+                        <td>皇冠高级房（-不含早）</td>
+                        <td>1</td>
+                        <td>2016/06/29</td>
+                        <td>0216/06/30</td>
+                        <td>16/06/29 13:47:47</td>
+                        <td>[未付款]</td>
+                        <td>194947454566</td>
+                    </tr>
+                    <tr>
+                        <td>k185489444</td>
+                        <td>18666082282</td>
+                        <td>徐志华</td>
+                        <td>上海圣诺亚皇冠假日酒店</td>
+                        <td>皇冠高级房（-不含早）</td>
+                        <td>1</td>
+                        <td>2016/06/29</td>
+                        <td>0216/06/30</td>
+                        <td>16/06/29 13:47:47</td>
+                        <td>[未付款]</td>
+                        <td>194947454566</td>
+                    </tr>
+                     <tr>
+                        <td>k185489444</td>
+                        <td>18666082282</td>
+                        <td>徐志华</td>
+                        <td>上海圣诺亚皇冠假日酒店</td>
+                        <td>皇冠高级房（-不含早）</td>
+                        <td>1</td>
+                        <td>2016/06/29</td>
+                        <td>0216/06/30</td>
+                        <td>16/06/29 13:47:47</td>
+                        <td>[未付款]</td>
+                        <td>194947454566</td>
+                    </tr>
+                     <tr>
+                        <td>k185489444</td>
+                        <td>18666082282</td>
+                        <td>徐志华</td>
+                        <td>上海圣诺亚皇冠假日酒店</td>
+                        <td>皇冠高级房（-不含早）</td>
+                        <td>1</td>
+                        <td>2016/06/29</td>
+                        <td>0216/06/30</td>
+                        <td>16/06/29 13:47:47</td>
+                        <td>[未付款]</td>
+                        <td>194947454566</td>
+                    </tr>
+                     <tr>
+                        <td>k185489444</td>
+                        <td>18666082282</td>
+                        <td>徐志华</td>
+                        <td>上海圣诺亚皇冠假日酒店</td>
+                        <td>皇冠高级房（-不含早）</td>
+                        <td>1</td>
+                        <td>2016/06/29</td>
+                        <td>0216/06/30</td>
+                        <td>16/06/29 13:47:47</td>
+                        <td>[未付款]</td>
+                        <td>194947454566</td>
+                    </tr>
+                     <tr>
+                        <td>k185489444</td>
+                        <td>18666082282</td>
+                        <td>徐志华</td>
+                        <td>上海圣诺亚皇冠假日酒店</td>
+                        <td>皇冠高级房（-不含早）</td>
+                        <td>1</td>
+                        <td>2016/06/29</td>
+                        <td>0216/06/30</td>
+                        <td>16/06/29 13:47:47</td>
+                        <td>[未付款]</td>
+                        <td>194947454566</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="fg-toolbar ui-toolbar ui-widget-header ui-corner-bl ui-corner-br ui-helper-clearfix">
+            	<!--<div class="dataTables_filter"><label><span class="itemsPerPage">搜索:</span> <input type="text" placeholder="输入关键字"><div class="srch"></div></label></div>-->
+            	<div class="itemActions">
+                                <label>跳转到:</label>
+                                <div class="selector"><span>第1页</span>
+                                	<select style="opacity: 0;">
+	                                    <option value="">第1页</option>
+	                                    <option value="Edit">第2页</option>
+	                                    <option value="Delete">第3页</option>
+	                                    <option value="Move">第4页</option>
+                                </select></div>
+                            </div>
+            <div class="dataTables_paginate fg-buttonset ui-buttonset fg-buttonset-multi ui-buttonset-multi paging_full_numbers"><span class="toFirst ui-corner-tl ui-corner-bl fg-button ui-button">首页</span><span class="previous fg-button ui-button">上一页</span><span><span class="fg-button ui-button">2</span><span class="fg-button ui-button">3</span><span class="fg-button ui-button">4</span><span class="fg-button ui-button ui-state-disabled">5</span><span class="fg-button ui-button">6</span></span><span class="next fg-button ui-button">下一页</span><span class="last ui-corner-tr ui-corner-br fg-button ui-button">尾页</span></div></div>
+            		</div>
+        </div>
+    
+    <!-- Footer line -->
+    <div id="footer">
+        <div class="wrapper">凌众信息技术有限公司</div>
+    </div>
+
+</div>
+
+<div class="clear"></div>
+
+</body>
+</html>
