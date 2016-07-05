@@ -32,4 +32,6 @@ $(function(){
 		$(this).siblings(".smallDropdown").toggle("blind",200)
 	})
 	
+	
+	console.log("test")
 	})
