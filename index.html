@@ -6,9 +6,21 @@
 <title>预付管理后台</title>
 <link href="css/main.css" rel="stylesheet" type="text/css" />
 <link href="css/shin.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="js/jquery.min.js"></script>
+<!--<script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/jquery-ui.min.js"></script>
-<script type="text/javascript" src="minjs/shin.js"></script>
+<script type="text/javascript" src="minjs/shin.js"></script>-->
+<script type="text/javascript" src="js/require.js"></script>
+<script>
+	require.config({
+    	baseUrl:"js",
+    	paths:{
+    		"jquery":"jquery.min",
+    		"jquery-ui":"jquery-ui.min",
+    		"shin":"shin"
+    	}
+    });
+require(["jquery","jquery-ui","shin"])
+</script>
 </head>
 
 <body>
@@ -23,14 +35,14 @@
     
     <!-- Left navigation -->
     <ul id="menu" class="nav">
-        <li class="forms"><a href="#" title="" class="exp"><span>天猫订单</span><!--<strong>3</strong>--><i></i></a>
+        <li class="forms"><a href="#" title="" class="exp"><span>天猫订单</span><!--<strong>3</strong>--><!--<i></i>--></a>
             <ul class="sub">
                 <li><a href="#" title="">第三方预付</a></li>
                 <li><a href="#" title="">酒店套票</a></li>
                 <li class="last"><a href="#" title="">天猫自签度假酒店</a></li>
             </ul>
         </li>
-       <li class="forms"><a href="#" title="" class="exp"><span>天猫订单</span><!--<strong>3</strong>--><i></i></a>
+       <li class="forms"><a href="#" title="" class="exp"><span>天猫订单</span><!--<strong>3</strong>--><!--<i></i>--></a>
             <ul class="sub">
                 <li><a href="#" title="">第三方预付</a></li>
                 <li><a href="#" title="">酒店套票</a></li>
@@ -147,7 +159,7 @@
                             <span class="oneFour form"><input type="text" value="one four"></span>
                            </div>
                         <div class="clear"></div>
-						<div class="formSubmit"><input type="submit" value="搜索" class="redB"></div>
+						<div class="formSubmit"><input type="submit" value="搜索" class="shin-b"></div>
                     </div>
 
                     <div class="dataTables_wrapper">

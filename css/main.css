@@ -240,7 +240,7 @@ ul.userDropdown li a:hover { border-right: none; border-left: none; }
 .nav li a { display: block; background: url(../images/backgrounds/navItemBg.png) repeat-x 0 -43px; border-bottom: 1px solid #1c252b; border-top: 1px solid #404950; }
 .nav li a:hover { background-position: 0 -43px;/* border-top: 1px solid #516271; */}
 .nav li a.active, .nav li a:active { background-position: 0 -43px; /*border-top: 1px solid #657d92;*/ }
-.nav li a span { padding: 10px 0 12px 42px; display: block; font-size: 10px; text-transform: uppercase; font-weight: bold; color: #efefef; }
+.nav li a span { padding: 10px 0 12px 42px; display: block; font-size: 10px; text-transform: uppercase; font-weight: bold; /*color: #efefef;*/color: #333; }
 
 .nav li a strong { 
 	/*background: #1b232a;*/ 

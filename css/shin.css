@@ -3,6 +3,9 @@
 	margin-top: 10px;}
 ul.sub{
 	display: none;
+	width:200px;
+	margin: 0 auto;
+	/*background: url(../images/backgrounds/ulsubbg.png) no-repeat;*/
 }
 #nav-slide{
 	position: absolute;
@@ -62,3 +65,17 @@ ul.sub{
 	 /*font-size: 11px;*/ 
 	 /*color: #efefef;*/ 
 	 }
+.dataTables_wrapper .sTable tr:hover{
+	background: #ccc;
+}
+#menu .forms{
+	background: url(../images/backgrounds/ulsubbg.png) no-repeat;
+}
+.shin-b{
+	border:0;
+	background: #0668ad;
+	background-image:none !important;
+	color: #fff;
+	border-radius:3px;
+	box-sizing: border-box;
+}

@@ -33,5 +33,5 @@ $(function(){
 	})
 	
 	
-	console.log("test")
+	console.log("shin成功")
 	})

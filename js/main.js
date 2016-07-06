@@ -1,0 +1,9 @@
+require.config({
+    	baseUrl:"js",
+    	paths:{
+    		"jquery":"jquery.min",
+    		"jquery-ui":"jquery-ui.min",
+    		"shin":"shin"
+    	}
+    });
+require(["jquery","jquery-ui","shin"])
