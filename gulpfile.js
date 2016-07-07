@@ -2,8 +2,15 @@ var gulp=require("gulp"),
 	watch=require("gulp-watch"),
 	// autoprefixer=require("gulp-autoprefixer"),
 	plumber=require("gulp-plumber"),//这个是语法错误不弹出监控的插件
+	connect=require("gulp-connect"),
 	uglify=require("gulp-uglify");
-
+    
+    gulp.task("webserver",function(){
+    		connect.server({
+    			livereload:true,
+    			port:8787
+    		})
+    });
 
 	gulp.task("compress",function(){
 		return gulp.src("js/shin.js")
@@ -31,4 +38,4 @@ var gulp=require("gulp"),
 		})
 	})
 
-	gulp.task("default",["watch"]);
+	gulp.task("default",["watch","webserver"]);
